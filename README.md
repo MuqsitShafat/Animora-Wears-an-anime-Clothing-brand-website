@@ -9,7 +9,7 @@ Animora is a complete e-commerce platform dedicated to anime-themed streetwear. 
 Below are the visual highlights of the Animora platform:
 
 ### 🏠 Landing & Identity
-- **Home Page:** ![Home](./images/Home.png)
+- **Home Page:** ![Home](./images/home.png)
 - **About Us:** ![About](./images/About.png)
 - **Contact:** ![Contact](./images/Contact.png)
 
