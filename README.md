@@ -21,7 +21,7 @@ Below are the visual highlights of the Animora platform:
 ### 💳 Checkout & Logistics
 - **Address Details:** ![Address](./images/Address.png)
 - **Payment Options:** ![Payment](./images/Payment.png)
-- **Order Placement Animation:** ![After Order](./images/After_order_placement_ani....png)
+- **Order Placement Animation:** ![After Order](./images/After_order_placement_animation.png)
 - **Order Invoice:** ![Invoice](./images/Invoice.png)
 
 ---
