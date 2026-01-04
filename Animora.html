@@ -903,17 +903,7 @@ height: 90%;
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
   import { getAuth, onAuthStateChanged ,signOut} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
   import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
-
-  // Your Firebase config
-  const firebaseConfig = {
-    apiKey: "AIzaSyBoq6J4z48v48p177NNDNfM10Z0pp2_Hh4",
-        authDomain: "animora-77260.firebaseapp.com",
-        projectId: "animora-77260",
-        storageBucket: "animora-77260.appspot.com",
-        messagingSenderId: "325483607948",
-        appId: "1:325483607948:web:c65b7846d7d4e946ba08a9",
-        measurementId: "G-8WS25C0WWT"
-  };
+  import { firebaseConfig } from './firebase-config.js';
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
