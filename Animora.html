@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animora - Streetwear Reborn in Anime</title>
@@ -9,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Orbitron:wght@500&family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="images/nicee.png" type="image/png">
+    <link rel="icon" href="images/nicee.png" type="image/png" />
 
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
@@ -101,14 +100,14 @@
         height: 2px;
         background: #ffffff;
       }
-     
-.navbar .nav-links a.active:hover::after {
-  background: #c800ff78; /* desired hover underline color */
-}
+
+      .navbar .nav-links a.active:hover::after {
+        background: #c800ff78; /* desired hover underline color */
+      }
 
       .nav-links a:hover {
-  color: #c800ff78;
-}
+        color: #c800ff78;
+      }
       .navbar .monster {
         position: absolute;
         top: -33px;
@@ -228,7 +227,7 @@
       .product-title {
         font-size: 0.9em;
         margin: 8px 0;
-        color:#fff;
+        color: #fff;
       }
 
       .price {
@@ -239,7 +238,6 @@
       .stars {
         margin-top: 4px;
         color: gold;
-       
       }
 
       /* ----------- BLACK BOX SECTION ----------- */
@@ -408,7 +406,7 @@
       .footer-column ul li:hover {
         color: #fff;
       }
-     
+
       .social-icons i {
         margin-right: 12px;
         font-size: 18px;
@@ -470,7 +468,6 @@
         border-radius: 4px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        
       }
 
       .footer-column button:hover {
@@ -494,12 +491,12 @@
       .footer-bottom span:hover {
         color: #fff;
       }
-.h{
-  color: #ccc;
-}
-.h:hover{
-  color: #fff;
-}
+      .h {
+        color: #ccc;
+      }
+      .h:hover {
+        color: #fff;
+      }
       /* ----------- RESPONSIVE ----------- */
       @media (max-width: 768px) {
         .hero-section {
@@ -541,112 +538,116 @@
         }
       }
       .navbar .nav-links a.h::after {
-  display: none;
-}
-li.no-underline a {
-  text-decoration: none;
-  border-bottom: none;
-}
+        display: none;
+      }
+      li.no-underline a {
+        text-decoration: none;
+        border-bottom: none;
+      }
 
-li.no-underline a::after {
-  display: none;
-}.signin-button {
-  background: linear-gradient(100deg, #bfabab, #9405bc);
-  border: none;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  font-size: 15px;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 3;
-  margin-right: 15px;
-}
+      li.no-underline a::after {
+        display: none;
+      }
+      .signin-button {
+        background: linear-gradient(100deg, #bfabab, #9405bc);
+        border: none;
+        font-family: "Orbitron", sans-serif;
+        color: white;
+        font-size: 15px;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 3;
+        margin-right: 15px;
+      }
 
-.signin-button:hover {
-  background: linear-gradient(300deg, #bfabab, #9405bc);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+      .signin-button:hover {
+        background: linear-gradient(300deg, #bfabab, #9405bc);
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
 
+      /* Sidebar styling */
+      .sidebar {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        color: white;
+        overflow-x: hidden;
+        transition: width 0.3s ease;
+        padding: 20px 0;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      }
+      .sidebar-content {
+        height: 90%;
+      }
+      .sidebar.open {
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
 
-/* Sidebar styling */
-.sidebar {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #333;
-  color: white;
-  overflow-x: hidden;
-  transition: width 0.3s ease;
-  padding: 20px 0;
-  z-index: 1000;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-}
-.sidebar-content{
-height: 90%;
-}
-.sidebar.open {
-  width: 300px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
 
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
+      #toggleSidebar {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
 
-#toggleSidebar {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+      #toggleSidebar img {
+        width: 30px;
+        height: 30px;
+      }
+      #sidebarIcon {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.5s ease;
+      }
 
-#toggleSidebar img {
-  width: 30px;
-  height:30px;
-}
-#sidebarIcon {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.5s ease;
-}
+      /* Continuous rotation */
+      @keyframes rotateIcon {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-/* Continuous rotation */
-@keyframes rotateIcon {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+      #sidebarIcon.rotating {
+        animation: rotateIcon 0.3s linear infinite;
+      }
 
-#sidebarIcon.rotating {
-  animation: rotateIcon 0.3s linear infinite;
-}
-
-#logoutBtn {
-  border-width: 3px;
-  padding: 10px 15px;
-  background: #ff5555;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 40px;
-  cursor: pointer;
-  width: 100%;
-}
-.NAMES{
-  margin-top: 20px;
-}
+      #logoutBtn {
+        border-width: 3px;
+        padding: 10px 15px;
+        background: #ff5555;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 40px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .NAMES {
+        margin-top: 20px;
+      }
     </style>
   </head>
 
@@ -655,33 +656,50 @@ height: 90%;
 
     <!-- NAVBAR -->
     <nav class="navbar">
-    <div  ><a href="Animora.html" class="logo">Animora</a></div>
+      <div><a href="Animora.html" class="logo">Animora</a></div>
       <div class="nav-links">
-        <a href="Animora.html" class="active" >Home</a>
+        <a href="Animora.html" class="active">Home</a>
         <a href="Shop.html">Shop</a>
         <a href="About.html">About</a>
         <a href="Contact.html">Contact</a>
       </div>
       <button class="signin-button" id="user-btn">Sign In</button>
-      <button id="toggleSidebar" style="margin-left: 20px; cursor: pointer; background: none; border: none;">
-        <img src="images/slide.png" alt="Menu" style="width: 30px; height: 30px;" id="sidebarIcon" />
+      <button
+        id="toggleSidebar"
+        style="
+          margin-left: 20px;
+          cursor: pointer;
+          background: none;
+          border: none;
+        "
+      >
+        <img
+          src="images/slide.png"
+          alt="Menu"
+          style="width: 30px; height: 30px"
+          id="sidebarIcon"
+        />
       </button>
-    
     </nav>
-   <div id="sidebar" class="sidebar">
-  <button id="closeSidebar" class="close-btn">&times;</button>
+    <div id="sidebar" class="sidebar">
+      <button id="closeSidebar" class="close-btn">&times;</button>
 
-  <div class="sidebar-content">
-    <h2>User Info</h2>
-    <p class="NAMES"><strong>Name:</strong> <span id="userName">Loading...</span></p>
-    <p class="NAMES"><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
-    <p class="NAMES"><strong>Mobile:</strong> <span id="userMobile">Loading...</span></p>
-  </div>
+      <div class="sidebar-content">
+        <h2>User Info</h2>
+        <p class="NAMES">
+          <strong>Name:</strong> <span id="userName">Loading...</span>
+        </p>
+        <p class="NAMES">
+          <strong>Email:</strong> <span id="userEmail">Loading...</span>
+        </p>
+        <p class="NAMES">
+          <strong>Mobile:</strong> <span id="userMobile">Loading...</span>
+        </p>
+      </div>
 
-  <button id="logoutBtn">Log Out</button>
-</div>
+      <button id="logoutBtn">Log Out</button>
+    </div>
 
-    
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
       <div class="hero-text">
@@ -699,48 +717,50 @@ height: 90%;
     <!-- PRODUCT GRID SECTION -->
     <section id="shop" class="shop-section">
       <div class="product-card" onclick="navigate()">
-         <img src="images/shirt.png" alt="Shirt" />
+        <img src="images/shirt.png" alt="Shirt" />
         <div class="product-title">Regular Fit Long Sleeve Top</div>
-        <div class="price"> 1999~Rs</div>
+        <div class="price">1999~Rs</div>
         <div class="stars">⭐ 4.7</div>
       </div>
       <div class="product-card" onclick="navigate()">
         <img src="images/shirt.png" alt="Shirt" />
-       <div class="product-title">Regular Fit Long Sleeve Top</div>
-       <div class="price">1499~Rs</div>
-       <div class="stars">⭐ 4.7</div>
-     </div>
-     <div class="product-card" onclick="navigate()">
-      <img src="images/shirt.png" alt="Shirt" />
-     <div class="product-title">Regular Fit Long Sleeve Top</div>
-     <div class="price">1299~Rs</div>
-     <div class="stars">⭐ 4.7</div>
-   </div>
-   <div class="product-card" onclick="navigate()">
-    <img src="images/shirt.png" alt="Shirt" />
-   <div class="product-title">Regular Fit Long Sleeve Top</div>
-   <div class="price">999~Rs</div>
-   <div class="stars">⭐ 4.7</div>
- </div>
- <div class="product-card" onclick="navigate()">
-  <img src="images/shirt.png" alt="Shirt" />
- <div class="product-title">Regular Fit Long Sleeve Top</div>
- <div class="price">1999~Rs</div>
- <div class="stars">⭐ 4.7</div>
-</div>
-<div class="product-card" onclick="navigate()">
-  <img src="images/shirt.png" alt="Shirt" />
- <div class="product-title">Regular Fit Long Sleeve Top</div>
- <div class="price">1799~Rs</div>
- <div class="stars">⭐ 4.7</div>
-</div>
-<div class="see-all-wrapper">
-        <button class="see-all-button" onclick="window.location.href='Shop.html'">
+        <div class="product-title">Regular Fit Long Sleeve Top</div>
+        <div class="price">1499~Rs</div>
+        <div class="stars">⭐ 4.7</div>
+      </div>
+      <div class="product-card" onclick="navigate()">
+        <img src="images/shirt.png" alt="Shirt" />
+        <div class="product-title">Regular Fit Long Sleeve Top</div>
+        <div class="price">1299~Rs</div>
+        <div class="stars">⭐ 4.7</div>
+      </div>
+      <div class="product-card" onclick="navigate()">
+        <img src="images/shirt.png" alt="Shirt" />
+        <div class="product-title">Regular Fit Long Sleeve Top</div>
+        <div class="price">999~Rs</div>
+        <div class="stars">⭐ 4.7</div>
+      </div>
+      <div class="product-card" onclick="navigate()">
+        <img src="images/shirt.png" alt="Shirt" />
+        <div class="product-title">Regular Fit Long Sleeve Top</div>
+        <div class="price">1999~Rs</div>
+        <div class="stars">⭐ 4.7</div>
+      </div>
+      <div class="product-card" onclick="navigate()">
+        <img src="images/shirt.png" alt="Shirt" />
+        <div class="product-title">Regular Fit Long Sleeve Top</div>
+        <div class="price">1799~Rs</div>
+        <div class="stars">⭐ 4.7</div>
+      </div>
+      <div class="see-all-wrapper">
+        <button
+          class="see-all-button"
+          onclick="window.location.href='Shop.html'"
+        >
           See All <span class="arrow">→</span>
         </button>
       </div>
     </section>
-    
 
     <!-- EXCLUSIVE OFFER SECTION -->
     <section class="offer-box">
@@ -756,7 +776,9 @@ height: 90%;
           <div>18 hours</div>
           <div>48 min</div>
         </div>
-        <button class="buy-now"  onclick="window.location.href='Shop.html'">BUY NOW</button>
+        <button class="buy-now" onclick="window.location.href='Shop.html'">
+          BUY NOW
+        </button>
       </div>
     </section>
 
@@ -808,18 +830,32 @@ height: 90%;
         <div class="footer-column">
           <h4>Shop</h4>
           <ul>
-            <li class="no-underline"><a class="h" href="Shop.html">Products</a></li>
-            <li class="no-underline"><a class="h" href="Shop.html">Overview</a></li>
-            <li class="no-underline"><a class="h" href="Shop.html">Pricing</a></li>
-            <li class="no-underline"><a class="h" href="Shop.html">Releases</a></li>
+            <li class="no-underline">
+              <a class="h" href="Shop.html">Products</a>
+            </li>
+            <li class="no-underline">
+              <a class="h" href="Shop.html">Overview</a>
+            </li>
+            <li class="no-underline">
+              <a class="h" href="Shop.html">Pricing</a>
+            </li>
+            <li class="no-underline">
+              <a class="h" href="Shop.html">Releases</a>
+            </li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Company</h4>
           <ul>
-            <li class="no-underline"><a class="h" href="About.html">About Us</a></li>
-            <li class="no-underline"><a class="h" href="About.html">News</a></li>
-            <li class="no-underline"><a class="h" href="Contact.html">Support</a></li>
+            <li class="no-underline">
+              <a class="h" href="About.html">About Us</a>
+            </li>
+            <li class="no-underline">
+              <a class="h" href="About.html">News</a>
+            </li>
+            <li class="no-underline">
+              <a class="h" href="Contact.html">Support</a>
+            </li>
           </ul>
         </div>
         <div class="footer-column">
@@ -836,27 +872,29 @@ height: 90%;
         <span>Cookies</span>
       </div>
     </footer>
-    <div id="popup" style="
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #006403;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-weight: bold;
-    font-size: 1rem;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 9999;
-    cursor: pointer;
-  ">
-    ✅ Signed out Sucessfully!
-  </div>
+    <div
+      id="popup"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #006403;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
+        font-size: 1rem;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 9999;
+        cursor: pointer;
+      "
+    >
+      ✅ Signed out Sucessfully!
+    </div>
     <script>
-      
       function updateTimer() {
         const timerElements = document.querySelectorAll(".timer div");
         let days = parseInt(timerElements[0].textContent.split(" ")[0]);
@@ -893,196 +931,161 @@ height: 90%;
       }
 
       setInterval(updateTimer, 60000);
+
       function navigate() {
-      window.location.href = "Shop.html"; // Replace with your destination URL
-    }
+        window.location.href = "Shop.html";
+      }
     </script>
-    <!-- Firebase scripts -->
-<script type="module">
-  // Import Firebase
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-  import { getAuth, onAuthStateChanged ,signOut} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-  import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
-  import { firebaseConfig } from './firebase-config.js';
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const database = getDatabase(app);
+    <script type="module">
+      // Import Firebase
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      import {
+        getAuth,
+        onAuthStateChanged,
+        signOut,
+      } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+      import {
+        getDatabase,
+        ref,
+        get,
+      } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+      import { firebaseConfig } from "./firebase-config.js";
 
-  const userBtn = document.getElementById("user-btn");
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const database = getDatabase(app);
 
-  function updateUserButton(user) {
-  if (user) {
-    // Show loading while fetching
-    userBtn.textContent = "Loading...";
-    userBtn.onclick = null;
-    userBtn.style.pointerEvents = "none";
-    userBtn.style.cursor = "default";
+      const userBtn = document.getElementById("user-btn");
+      const toggleSidebarBtn = document.getElementById("toggleSidebar");
+      const closeSidebarBtn = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+      const sidebarIcon = document.getElementById("sidebarIcon");
+      const userNameElem = document.getElementById("userName");
+      const userEmailElem = document.getElementById("userEmail");
+      const userMobileElem = document.getElementById("userMobile");
+      const logoutBtn = document.getElementById("logoutBtn");
 
-    const uid = user.uid;
-    const usernameRef = ref(database, `users/${uid}/Name`);
+      function updateUserButton(user) {
+        if (user) {
+          userBtn.textContent = "Loading...";
+          userBtn.onclick = null;
+          userBtn.style.pointerEvents = "none";
+          userBtn.style.cursor = "default";
 
-    get(usernameRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        const username = snapshot.val();
-        userBtn.textContent = username;
+          const uid = user.uid;
+          const usernameRef = ref(database, `users/${uid}/Name`);
 
-        // Disable click after name is loaded
-        userBtn.onclick = null;
-        userBtn.style.pointerEvents = "none";
-        userBtn.style.cursor = "default";
-      } else {
-        userBtn.textContent = "User";
-        userBtn.onclick = null;
-        userBtn.style.pointerEvents = "none";
-        userBtn.style.cursor = "default";
-      }
-    }).catch((error) => {
-      console.error("Error fetching username:", error);
-      userBtn.textContent = "User";
-      userBtn.onclick = null;
-      userBtn.style.pointerEvents = "none";
-      userBtn.style.cursor = "default";
-    });
-
-  } else {
-    // No user logged in - show Sign In button clickable
-    userBtn.textContent = "Sign In";
-    userBtn.onclick = () => {
-      window.location.href = "signin.html";
-    };
-    userBtn.style.pointerEvents = "auto";
-    userBtn.style.cursor = "pointer";
-  }
-}
-
-
-userBtn.textContent = "Loading...";
-userBtn.onclick = null;
-userBtn.style.pointerEvents = "none";
-userBtn.style.cursor = "default";
-  // Check auth state
-  onAuthStateChanged(auth, (user) => {
-    updateUserButton(user);
-  });
-  const toggleSidebarBtn = document.getElementById("toggleSidebar");
-  const closeSidebarBtn = document.getElementById("closeSidebar");
-  const sidebar = document.getElementById("sidebar");
-  const sidebarIcon = document.getElementById("sidebarIcon");
-
-  const userNameElem = document.getElementById("userName");
-  const userEmailElem = document.getElementById("userEmail");
-  const userMobileElem = document.getElementById("userMobile");
-
-  // Firebase user info (change auth and database to your Firebase instances)
-
-  function updateSidebarUserInfo(user) {
-  // Show "Loading..." right away
-  userNameElem.textContent = "Loading...";
-  userEmailElem.textContent = "Loading...";
-  userMobileElem.textContent = "Loading...";
-
-  if (user) {
-    const uid = user.uid;
-    const userRef = ref(database, `users/${uid}`);
-
-    get(userRef).then(snapshot => {
-      if (snapshot.exists()) {
-        const data = snapshot.val();
-        userNameElem.textContent = data.Name || "N/A";
-        userEmailElem.textContent = data.Email || user.email || "N/A";
-        userMobileElem.textContent = data.Mobile || "N/A";
-      } else {
-        userNameElem.textContent = "N/A";
-        userEmailElem.textContent = user.email || "N/A";
-        userMobileElem.textContent = "N/A";
-      }
-    }).catch(error => {
-      console.error("Error fetching user data for sidebar:", error);
-      userNameElem.textContent = "N/A";
-      userEmailElem.textContent = "N/A";
-      userMobileElem.textContent = "N/A";
-    });
-
-  } else {
-    userNameElem.textContent = "No user signed in";
-    userEmailElem.textContent = "";
-    userMobileElem.textContent = "";
-  }
-}
-
-
-  toggleSidebarBtn.addEventListener("click", () => {
-    sidebar.classList.add("open");
-    sidebarIcon.classList.add("rotating");
-    setTimeout(() => {
-      sidebarIcon.classList.remove("rotating");
-      sidebarIcon.style.transform = "rotate(90deg)";
-    }, 300);
-    // Fetch current user and update info
-    const user = auth.currentUser;
-    updateSidebarUserInfo(user);
-  });
-
-  closeSidebarBtn.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-    sidebarIcon.style.transform = "rotate(0deg)";
-
-  });
-
-  // Optional: click outside to close
-  window.addEventListener("click", (event) => {
-    if (
-      sidebar.classList.contains("open") &&
-      !sidebar.contains(event.target) &&
-      !toggleSidebarBtn.contains(event.target)
-    ) {
-      sidebar.classList.remove("open");
-      sidebarIcon.style.transform = "rotate(0deg)";
-
-    }
-  });
-  const logoutBtn = document.getElementById("logoutBtn");
-
-logoutBtn.addEventListener("click", () => {
-  const auth = getAuth();
-  signOut(auth)
-    .then(() => {
-      popup.style.display = "block";
-          setTimeout(() => {
-            popup.style.opacity = "1";
-          }, 10);
-    
-          const timer = setTimeout(() => {
-            popup.style.opacity = "0";
-            setTimeout(() => {
-              popup.style.display = "none";
-            }, 500);
-          }, 3000);
-    
-          popup.onclick = () => {
-            clearTimeout(timer);
-            popup.style.opacity = "0";
-            setTimeout(() => {
-              popup.style.display = "none";
-            }, 500);
+          get(usernameRef)
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                userBtn.textContent = snapshot.val();
+              } else {
+                userBtn.textContent = "User";
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching username:", error);
+              userBtn.textContent = "User";
+            });
+        } else {
+          userBtn.textContent = "Sign In";
+          userBtn.onclick = () => {
+            window.location.href = "signin.html";
           };
-          localStorage.removeItem("cart");
+          userBtn.style.pointerEvents = "auto";
+          userBtn.style.cursor = "pointer";
+        }
+      }
 
-    })
-    .catch((error) => {
-      console.error("Error during logout:", error);
-      alert("Logout failed. Try again.");
-    });
-});
-// Update user info on auth state change
-onAuthStateChanged(auth, (user) => {
-  updateUserButton(user); // existing function to update button text
-  updateSidebarUserInfo(user);
-});
+      function updateSidebarUserInfo(user) {
+        if (user) {
+          userNameElem.textContent = "Loading...";
+          userEmailElem.textContent = "Loading...";
+          userMobileElem.textContent = "Loading...";
 
-</script>
+          const uid = user.uid;
+          const userRef = ref(database, `users/${uid}`);
 
+          get(userRef)
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                const data = snapshot.val();
+                userNameElem.textContent = data.Name || "N/A";
+                userEmailElem.textContent = data.Email || user.email || "N/A";
+                userMobileElem.textContent = data.Mobile || "N/A";
+              } else {
+                userNameElem.textContent = "N/A";
+                userEmailElem.textContent = user.email || "N/A";
+                userMobileElem.textContent = "N/A";
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching user data:", error);
+            });
+        } else {
+          userNameElem.textContent = "No user signed in";
+          userEmailElem.textContent = "";
+          userMobileElem.textContent = "";
+        }
+      }
+
+      // Monitor auth state
+      onAuthStateChanged(auth, (user) => {
+        updateUserButton(user);
+        updateSidebarUserInfo(user);
+      });
+
+      toggleSidebarBtn.addEventListener("click", () => {
+        sidebar.classList.add("open");
+        sidebarIcon.classList.add("rotating");
+        setTimeout(() => {
+          sidebarIcon.classList.remove("rotating");
+          sidebarIcon.style.transform = "rotate(90deg)";
+        }, 300);
+        updateSidebarUserInfo(auth.currentUser);
+      });
+
+      closeSidebarBtn.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        sidebarIcon.style.transform = "rotate(0deg)";
+      });
+
+      window.addEventListener("click", (event) => {
+        if (
+          sidebar.classList.contains("open") &&
+          !sidebar.contains(event.target) &&
+          !toggleSidebarBtn.contains(event.target)
+        ) {
+          sidebar.classList.remove("open");
+          sidebarIcon.style.transform = "rotate(0deg)";
+        }
+      });
+
+      logoutBtn.addEventListener("click", () => {
+        signOut(auth)
+          .then(() => {
+            // Handle popup if it exists in your HTML
+            const popup = document.getElementById("popup");
+            if (popup) {
+              popup.style.display = "block";
+              setTimeout(() => {
+                popup.style.opacity = "1";
+              }, 10);
+              setTimeout(() => {
+                popup.style.opacity = "0";
+                setTimeout(() => {
+                  popup.style.display = "none";
+                }, 500);
+              }, 3000);
+            }
+            localStorage.removeItem("cart");
+          })
+          .catch((error) => {
+            console.error("Error during logout:", error);
+          });
+      });
+    </script>
   </body>
 </html>
