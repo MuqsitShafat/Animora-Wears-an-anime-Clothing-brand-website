@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Animation to replace Framer Motion's y: [-20, 20, -20] */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-robot {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Ensuring the background color matches your exact hex code */
+        body {
+            background-color: #aacc8e;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <div class="max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <div class="w-full max-w-sm animate-robot">
+                <img 
+                    src="images/robot.png" 
+                    alt="404 Robot" 
+                    class="w-full h-auto drop-shadow-2xl"
+                >
+            </div>
+
+            <div class="flex flex-col items-center md:items-start text-[#2D3436]">
+                <h1 class="text-8xl font-black mb-2 opacity-20">404</h1>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 uppercase tracking-tight">
+                    Page Not Found
+                </h2>
+                <p class="text-xl text-gray-700 mb-8 max-w-md text-center md:text-left">
+                    Oops! The robot couldn't find the page you were looking for. It might have been moved or deleted.
+                </p>
+                
+                <a href="index.html" 
+                   class="px-8 py-4 bg-[#FFC107] hover:bg-[#FFB300] text-black font-bold rounded-full transition-all hover:scale-105 shadow-lg inline-block">
+                    Back To Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
