@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,9 @@
 
       body {
         font-family: "Orbitron", sans-serif;
-        background: url("images/text.png") center center no-repeat, #333;
+        background:
+          url("images/text.png") center center no-repeat,
+          #333;
         background-size: cover;
         background-attachment: fixed;
         color: white;
@@ -752,7 +754,7 @@
       <div class="see-all-wrapper">
         <button
           class="see-all-button"
-          onclick="window.location.href='Shop.html'"
+          onclick="window.location.href = 'Shop.html'"
         >
           See All <span class="arrow">→</span>
         </button>
@@ -772,7 +774,7 @@
           <div>18 hours</div>
           <div>48 min</div>
         </div>
-        <button class="buy-now" onclick="window.location.href='Shop.html'">
+        <button class="buy-now" onclick="window.location.href = 'Shop.html'">
           BUY NOW
         </button>
       </div>
@@ -986,7 +988,8 @@
         } else {
           userBtn.textContent = "Sign In";
           userBtn.onclick = () => {
-            window.location.href = "signin.html";
+            // Updated path logic for Netlify production
+            window.location.href = "./signin.html";
           };
           userBtn.style.pointerEvents = "auto";
           userBtn.style.cursor = "pointer";
