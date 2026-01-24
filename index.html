@@ -934,7 +934,6 @@
     </script>
 
     <script type="module">
-      // Import Firebase (Updated Modular API)
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
       import {
         getAuth,
@@ -948,7 +947,6 @@
       } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
       import { firebaseConfig } from "./firebase-config.js";
 
-      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const auth = getAuth(app);
       const database = getDatabase(app);
@@ -988,8 +986,7 @@
         } else {
           userBtn.textContent = "Sign In";
           userBtn.onclick = () => {
-            // Updated path logic for Netlify production
-            window.location.href = "./signin.html";
+            window.location.href = "signin.html";
           };
           userBtn.style.pointerEvents = "auto";
           userBtn.style.cursor = "pointer";
@@ -1028,13 +1025,13 @@
         }
       }
 
-      // Monitor auth state
       onAuthStateChanged(auth, (user) => {
         updateUserButton(user);
         updateSidebarUserInfo(user);
       });
 
-      toggleSidebarBtn.addEventListener("click", () => {
+      toggleSidebarBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
         sidebar.classList.add("open");
         sidebarIcon.classList.add("rotating");
         setTimeout(() => {
@@ -1063,7 +1060,6 @@
       logoutBtn.addEventListener("click", () => {
         signOut(auth)
           .then(() => {
-            // Handle popup if it exists in your HTML
             const popup = document.getElementById("popup");
             if (popup) {
               popup.style.display = "block";
